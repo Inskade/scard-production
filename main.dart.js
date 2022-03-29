@@ -23834,7 +23834,7 @@ s=p}while(true)switch(s){case 0:p=4
 A.bc("---Payload---")
 A.aK7(A.Lw(a),"")
 j=$.rE()
-i=A.f1("https://sachinpb.xyz/order/createorder",0,null)
+i=A.f1("https://inskade.in/order/createorder",0,null)
 h=A.alD(a,null,null)
 g=t.N
 s=7
@@ -23888,7 +23888,7 @@ aTj(a){var s=0,r=A.O(t.z),q,p=2,o,n=[],m,l,k,j,i,h,g,f,e
 var $async$a9_=A.P(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 j=$.rE()
-i=A.f1("https://sachinpb.xyz/order/validateOrder",0,null)
+i=A.f1("https://inskade.in/order/validateOrder",0,null)
 h=A.alD(a,null,null)
 g=t.N
 s=7
@@ -23930,7 +23930,7 @@ aTk(a){var s=0,r=A.O(t.z),q,p=2,o,n=[],m,l,k,j,i,h,g,f
 var $async$a90=A.P(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.Q($.rE().qY("GET",A.f1("https://sachinpb.xyz/"+("order/verifyCoupon?couponCode="+a),0,null),null),$async$a90)
+return A.Q($.rE().qY("GET",A.f1("https://inskade.in/"+("order/verifyCoupon?couponCode="+a),0,null),null),$async$a90)
 case 7:m=c
 if(m.b===200){j=m
 l=B.aK.ll(0,A.i9(J.T(A.i7(j.e).c.a,"charset")).c6(0,j.x),null)
@@ -23970,7 +23970,7 @@ var $async$a8Z=A.P(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 j=t.N
 s=7
-return A.Q($.rE().mz("POST",A.f1("https://sachinpb.xyz/"+("order/checkShippingCost?pinCode="+a),0,null),A.aF(["Content-Type","application/json"],j,j),null,null),$async$a8Z)
+return A.Q($.rE().mz("POST",A.f1("https://inskade.in/"+("order/checkShippingCost?pinCode="+a),0,null),A.aF(["Content-Type","application/json"],j,j),null,null),$async$a8Z)
 case 7:m=c
 if(m.b===200){j=m
 l=B.aK.ll(0,A.i9(J.T(A.i7(j.e).c.a,"charset")).c6(0,j.x),null)
@@ -24009,7 +24009,7 @@ var $async$a8W=A.P(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 j=t.N
 s=7
-return A.Q($.rE().qY("GET",A.f1("https://sachinpb.xyz/checkout/generateQRCode",0,null),A.aF(["Content-Type","application/json"],j,j)),$async$a8W)
+return A.Q($.rE().qY("GET",A.f1("https://inskade.in/checkout/generateQRCode",0,null),A.aF(["Content-Type","application/json"],j,j)),$async$a8W)
 case 7:m=b
 if(m.b===200){j=m
 l=B.aK.ll(0,A.i9(J.T(A.i7(j.e).c.a,"charset")).c6(0,j.x),null)
@@ -24049,7 +24049,7 @@ var $async$a8Y=A.P(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 j=t.N
 s=7
-return A.Q($.rE().qY("GET",A.f1("https://sachinpb.xyz/"+("order/getPresignedPDF?fileId="+a),0,null),A.aF(["Content-Type","application/json"],j,j)),$async$a8Y)
+return A.Q($.rE().qY("GET",A.f1("https://inskade.in/"+("order/getPresignedPDF?fileId="+a),0,null),A.aF(["Content-Type","application/json"],j,j)),$async$a8Y)
 case 7:m=c
 if(m.b===200){j=m
 l=B.aK.ll(0,A.i9(J.T(A.i7(j.e).c.a,"charset")).c6(0,j.x),null)
@@ -24088,7 +24088,7 @@ var $async$a8X=A.P(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 j=t.N
 s=7
-return A.Q($.rE().qY("GET",A.f1("https://sachinpb.xyz/scards/getAllScardInfo",0,null),A.aF(["Content-Type","application/json"],j,j)),$async$a8X)
+return A.Q($.rE().qY("GET",A.f1("https://inskade.in/scards/getAllScardInfo",0,null),A.aF(["Content-Type","application/json"],j,j)),$async$a8X)
 case 7:m=b
 if(m.b===200){j=m
 l=B.aK.ll(0,A.i9(J.T(A.i7(j.e).c.a,"charset")).c6(0,j.x),null)
