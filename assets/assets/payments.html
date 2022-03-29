@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width">
+<head><title>RazorPay Web Payment</title></head>
+<body>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+   const queryString = window.location.search;
+   console.log(queryString);
+   const urlParams = new URLSearchParams(queryString);
+   const name = urlParams.get('name')
+   const price = urlParams.get('price')
+   const image = urlParams.get('image')
+   const email = urlParams.get('email')
+   const username = urlParams.get('username')
+   const phone = urlParams.get('phone')
+   const desc = urlParams.get('desc')
+   const address = urlParams.get('address')
+   const orderId = urlParams.get('orderId')
+   const razorpayOrderId = urlParams.get('razorpayOrderId')
+   const razorpayKey = urlParams.get('razorpayKey')
+
+      options = {
+         "key": razorpayKey,
+          "amount": price, "currency": "INR",
+          "name": name,
+          "description": desc,
+          "image":image,
+          "order_id": razorpayOrderId,
+          "handler": function (response){
+             window.parent.postMessage({
+               "status": "success",
+               "razorpayPaymentId":response.razorpay_payment_id,
+               "razorpaySignature":response.razorpay_signature,
+               },"*");
+          },
+          "prefill": {
+             "name": username,
+             "email": email,
+             "contact":"+91-" + phone
+           },
+           "notes": {
+             "address": address,
+             "order_id": orderId
+          },
+          "theme": {
+             "color": "#F2B860",
+          },
+          "modal": {
+            "ondismiss": function(){
+               window.parent.postMessage({
+               "status": "fail"
+               },"*"); 
+            }
+          }
+       };
+       var rzp1 = new Razorpay(options);
+       window.onload = function(e){
+          rzp1.open();
+          e.preventDefault();
+       }
+
+     </script>
+</body>
+</html>
